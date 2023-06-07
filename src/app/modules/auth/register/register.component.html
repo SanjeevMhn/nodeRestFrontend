@@ -1,0 +1,35 @@
+<div class="auth-wrapper w-full h-screen flex items-center justify-center">
+    <form
+        class="signup-form form w-full max-w-[480px] p-[25px] rounded-xl bg-gray-200 border border-gray-600">
+        <div class="form-header pb-[10px]">
+            <h2 class="form-header-text text-[22px] font-sans font-semibold text-black">Register</h2>
+        </div>
+        <div class="form-body">
+            <div class="form-group mb-3">
+                <input type="text" name="user_ft_name" id="user_ft_name"
+                    class="form-input p-[5px_10px] text-[18px] text-black border border-gray-600 rounded-md w-full"
+                    formControlName="user_ft_name" placeholder="First Name">
+            </div>
+            <div class="form-group mb-3">
+                <input type="text" name="user_lt_name" id="user_lt_name"
+                    class="form-input p-[5px_10px] text-[18px] text-black border border-gray-600 rounded-md w-full"
+                    formControlName="user_lt_name" placeholder="Last Name">
+            </div>
+            <div class="form-group mb-3">
+                <input type="email" name="user_email" id="user_email"
+                    class="form-input p-[5px_10px] text-[18px] text-black border border-gray-600 rounded-md w-full"
+                    formControlName="user_email" placeholder="Email">
+            </div>
+            <div class="form-group mb-3">
+                <input type="password" name="user_password" id="user_password"
+                    class="form-input p-[5px_10px] text-[18px] text-black border border-gray-600 rounded-md w-full"
+                    formControlName="user_password" placeholder="Password">
+            </div>
+            <a routerLink="" class="info text-blue-400 text-[15px]">Already registered? Go to Login</a>
+        </div>
+        <div class="form-footer flex justify-center px-[15px] pt-[15px] gap-3">
+            <button class="btn p-[5px_15px] border border-blue-400 text-blue-400 text-[18px] rounded-md w-[50%] bg-white" type="button">Cancel</button>
+            <button class="btn p-[5px_15px] bg-blue-400 text-white text-[18px] rounded-md w-[50%]" type="button">Submit</button>
+        </div>
+    </form>
+</div>
