@@ -1,15 +1,15 @@
-<div class="layout-wrapper">
+<div class="layout-wrapper relative">
     <nav class="main-nav py-[8px] bg-teal-800">
         <div class="wrapper flex justify-between">
-            <a href="#" class="brand-link text-white font-bold text-[27px]">Poster</a>
+            <a routerLink="/home/" class="brand-link text-white font-bold text-[27px]">Poster</a>
             <ul class="nav-list flex items-center">
                 <li class="nav-item">
-                    <a href="#" class="nav-link block text-white text-[18px] mr-4 p-[5px_12px]">
+                    <a routerLink="create"  class="nav-link block text-white text-[18px] mr-4 p-[5px_12px] cursor-pointer">
                         Create Post
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link block text-white text-[18px] p-[5px_12px]">
+                    <a class="nav-link block text-white text-[18px] p-[5px_12px] cursor-pointer" (click)="logout()">
                         Profile
                     </a>
                 </li>

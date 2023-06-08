@@ -26,7 +26,7 @@ export class AuthInterceptor implements HttpInterceptor {
       if (err.status === 403 && !this.refresh) {
         this.refresh = true;
 
-        return this.http.post('http://localhost:3000/api/refresh', {}, { withCredentials: true }).pipe(
+        return this.http.get('http://localhost:3000/api/refresh', { withCredentials: true }).pipe(
           switchMap((res: any) => {
             AuthInterceptor.accessToken = res.access_token;
 
@@ -39,7 +39,7 @@ export class AuthInterceptor implements HttpInterceptor {
         )
         
       }else{
-        this.router.navigate(['/auth']);
+        this.router.navigate(['/home']);
       }
       this.refresh = false;
       return throwError(() => err);

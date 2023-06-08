@@ -4,16 +4,20 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { FeedComponent } from './feed/feed.component';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 
 @NgModule({
   declarations: [
     FeedComponent,
-    LayoutComponent
+    LayoutComponent,
+    CreatePostComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    ReactiveFormsModule,
   ]
 })
 export class HomeModule { }

@@ -1,0 +1,33 @@
+<div class="create-post-container">
+    <div class="wrapper">
+
+        <form [formGroup]="createPostForm"
+            class="create-post-form p-[25px] text-black w-[90%] max-w-[750px] overflow-y-auto mx-auto min-h-[calc(100vh-56.5px)]">
+            <div class="form-header pb-[10px]">
+                <h2 class="form-header-text text-[28px] font-semibold">Create Post</h2>
+            </div>
+            <div class="form-body pb-[10px]">
+                <div class="form-group mb-4 flex flex-col">
+                    <label for="post_title" class="text-[22px] font-semibold pb-[5px]">Title</label>
+                    <input type="text" name="post_title" id="post_title"
+                        class="w-full p-[5px_12px] border border-gray-500 rounded-md text-[18px]" placeholder="Title..."
+                        formControlName="post_title">
+                </div>
+                <div class="form-group">
+                    <label for="post_desc" class="text-[22px] font-semibold pb-[5px]">Description</label>
+                    <textarea name="post_desc" id="post_desc"
+                        class="w-full min-h-[calc(100vh-350px)] p-[5px_12px] border border-gray-500 rounded-md text-[18px]"
+                        formControlName="post_desc">Add Content....</textarea>
+                </div>
+            </div>
+            <div class="form-footer flex justify-end pt-[10px]">
+                <button type="button"
+                    class="p-[5px_15px] text-[18px] rounded-md border border-blue-400 text-blue-400 mr-3"
+                    type="reset">Cancel</button>
+                <button type="button" class="p-[5px_15px] text-[18px] rounded-md bg-blue-400 text-white"
+                    (click)="submitForm()">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</div>
