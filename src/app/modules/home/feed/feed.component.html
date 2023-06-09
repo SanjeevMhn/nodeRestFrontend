@@ -12,10 +12,10 @@
             <div class="inner-container">
                 <ul class="posts-list">
                     <li class="post-item" *ngFor="let post of posts">
-                        <a href="#" class="post-link block">
+                        <a [routerLink]="['/home/view/',post.post_id]" class="post-link block">
                             <div class="post-card border-b border-gray-400 p-[15px]">
                                 <div class="post-header">
-                                    <a href="#" class="post-author text-[18px]">{{post.post_author}}</a>
+                                    <a  class="post-author text-[18px]">{{post.post_author}}</a>
                                 </div>
                                 <h2 class="post-title text-[25px]">{{post.post_title}}</h2>
                             </div>

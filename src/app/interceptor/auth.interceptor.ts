@@ -39,7 +39,7 @@ export class AuthInterceptor implements HttpInterceptor {
         )
         
       }else{
-        this.router.navigate(['/home']);
+        this.router.navigate(['/auth']);
       }
       this.refresh = false;
       return throwError(() => err);

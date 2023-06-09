@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FeedComponent } from './feed/feed.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { CreatePostComponent } from './create-post/create-post.component';
+import { ViewPostComponent } from './view-post/view-post.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,8 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       { path: '', component: FeedComponent },
-      { path: 'create', component: CreatePostComponent }
+      { path: 'create', component: CreatePostComponent },
+      { path: 'view/:id', component: ViewPostComponent },
     ]
   }
 ];
