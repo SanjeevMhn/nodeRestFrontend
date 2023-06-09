@@ -15,7 +15,9 @@ export class LayoutComponent implements OnInit {
   // showModal:boolean = false;
   // createPostForm!:FormGroup ;
  
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    
+  }
 
   // togglePostModal(state:boolean): void{
   //   this.showModal = state;

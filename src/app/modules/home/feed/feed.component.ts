@@ -19,7 +19,7 @@ export class FeedComponent implements OnInit {
         this.posts = res.posts
       },
       error: () => {
-        this.router.navigate(['/auth']);
+        // this.router.navigate(['/auth']);
       }
     });
   }

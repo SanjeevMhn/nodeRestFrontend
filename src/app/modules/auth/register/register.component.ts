@@ -15,6 +15,7 @@ export class RegisterComponent implements OnInit {
   constructor(private fb: FormBuilder, private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
+    
     this.signupForm = this.fb.group({
       user_ft_name: '',
       user_lt_name: '',
