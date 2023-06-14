@@ -19,11 +19,12 @@ export class ViewPostComponent implements OnInit {
   }
 
   getPost(id:number):void{
-    console.log(id);
+    // console.log(id);
     this.http.get(`http://localhost:3000/api/posts/${id}`)
     .subscribe({
       next: (res:any) => {
         this.post = res.post[0];
+        // console.log(this.post);
       },
       error: (err: any) => {
         console.error(err);

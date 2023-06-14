@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   }
 
   submit(){
-    this.http.post('http://localhost:3000/api/login', this.loginForm.getRawValue())
+    this.http.post('http://localhost:3000/api/login', this.loginForm.getRawValue(),{withCredentials: true})
     .subscribe({
       next: (res: any) => {
         AuthInterceptor.accessToken = res.access_token;
